@@ -1,0 +1,123 @@
+/* Configuración General */
+body {
+    background-color: #fcfaf7;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 700px; /* Ancho máximo en computadoras */
+    width: 90%;       /* Ocupa casi todo el ancho en móviles */
+    padding: 80px 25px;
+    text-align: justify;
+    box-sizing: border-box; /* Asegura que el padding no rompa el diseño */
+}
+
+/* Títulos */
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* Estilo del Texto */
+p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.highlight {
+    font-style: italic;
+    color: #7f8c8d;
+    border-left: 3px solid #d4af37;
+    padding-left: 20px;
+    margin: 40px 0;
+    font-size: 1.15rem;
+}
+
+/* Separador visual */
+.separator {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 1.5rem;
+    color: #d4af37;
+}
+
+/* Frase Final */
+.final-quote {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 100px;
+    color: #2c3e50;
+    opacity: 0.8;
+    line-height: 1.4;
+}
+
+.initials {
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 5px;
+    margin-top: 50px;
+    color: #bdc3c7;
+    text-transform: uppercase;
+}
+
+/* Animación suave al cargar */
+.fade-in {
+    animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* ==========================================
+   REGLAS RESPONSIVE (Móviles y Tablets)
+   ========================================== */
+
+/* Para pantallas medianas (Tablets) */
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Para pantallas pequeñas (Celulares) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.7rem; /* Título un poco más pequeño para que no se corte */
+        margin-bottom: 40px;
+    }
+    
+    p {
+        font-size: 1rem; /* Texto base un poco más pequeño */
+        text-align: left; /* En móviles el texto justificado a veces deja huecos raros */
+    }
+
+    .highlight {
+        font-size: 1.05rem;
+        margin: 30px 0;
+    }
+
+    .final-quote {
+        font-size: 1.2rem;
+        margin-top: 60px;
+    }
+}
